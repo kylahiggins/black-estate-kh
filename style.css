@@ -5,6 +5,8 @@ body{
     font-family: 'Volkhov', serif;
 }
 
+/* navigation and landing */
+
 ul{
     padding: 0;
     margin: 0;
@@ -13,8 +15,8 @@ ul{
 #landing-section{
     background-image: url(./images/landing-image.jpeg);
     height: 90vh;
-    object-fit: contain;
-    background-position:50% 60%;
+    background-size: cover;
+    background-position: center;
 }
 .nav-bar{
     padding: 1em;
@@ -55,3 +57,40 @@ ul{
     text-decoration: underline;
 }
 
+/* navigation and landing end */
+
+/* wine tours & tastings section */
+.wine-tours-and-tastings{
+    padding: 4em;
+    min-height: 500px;
+}
+.relative-container{
+    position: relative;
+}
+
+.absolute-container{
+    position: absolute;
+    border: solid 2px black;
+    left: 25%;
+}
+
+
+.img-container{
+    flex: 1;
+    max-width: 600px;
+}
+
+img{
+    /* height: 100%; */
+    width: 100%;
+    object-fit: cover;
+}
+
+.flex-items{
+    display: flex;
+}
+
+.txt-container{
+    flex: 1;
+    margin: 3em
+}
