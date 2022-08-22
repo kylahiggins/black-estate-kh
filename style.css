@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Volkhov&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Volkhov', serif;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+#landing-section{
+    background-image: url(./images/landing-image.jpeg);
+    height: 90vh;
+    object-fit: contain;
+    background-position:50% 60%;
+}
+.nav-bar{
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo-wrapper{
+    display: flex;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.logo-wrapper img{
+    width: 100%;
+    object-fit: contain;  
+}
+
+.nav-items{
+    padding-top: 1em;
+    display: flex;
+    flex-direction: row;  
+}
+
+.nav-items li{
+    list-style: none;
+    
+    
+} 
+
+.nav-items a{
+    text-decoration: none;
+    margin: .8em;
+    color: black;
+}
+
+.nav-items a:hover{
+    text-decoration: underline;
+}
+
