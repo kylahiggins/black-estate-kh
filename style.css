@@ -65,43 +65,68 @@ ul{
 /* wine tours & tastings section */
 .wine-tours-and-tastings{
     padding: 4em;
-    min-height: 900px;
-}
-.relative-container{
     position: relative;
 }
 
 .absolute-container{
-    min-width: 80%;
-    min-height: 700px;
-    max-height: 800px;
+    min-width: 70%;
+    min-height: 500px;
+    max-height: auto;
     position: absolute;
     border: solid 2px black;
-    left: 15%;
+    left: 25%;
+    z-index: -1;
 }
 
 
 .img-container{
     flex: 1;
-    /* max-width: 600px; */
+    max-width: 600px;
+    min-width: 500px;
 }
 
 img{
-    /* height: 100%; */
+
     width: 100%;
     object-fit: cover;
 }
 
 .flex-items{
-    /* margin: 2em; */
+    flex-wrap: wrap;
     display: flex;
     margin-top: 3em;
-    position: absolute;
+    justify-content: space-evenly;
 }
 
 .txt-container{
-    margin: 10px;
+    display: flex;
     flex: 1;
+    min-width: 500px;
     max-width: 600px;
-    margin: 3em;
+    justify-content: center;
+    align-items: center;  
 }
+
+.text-content{
+    margin: 5em;
+    font-family: 'Questrial', sans-serif;
+}
+
+.wine-tours-button{
+    margin-top: 2em;
+    background-color: #FFD30A;
+    max-width: 100px;
+    padding: .8em;
+    text-align: center;
+    border: solid 2px black;
+}
+
+.wine-tours-button a{
+    text-decoration: none;
+    color:black;
+    font-family: 'Volkhov', serif;
+}
+
+/* Wine tours & Tastings end */
+
+/* Shop feature */
