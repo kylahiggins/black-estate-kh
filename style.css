@@ -176,7 +176,6 @@ img{
 }
 
 .img-wrapper:hover .txt-container-feature{
-    transition: 0.6s;
     display: block;
 
 }
