@@ -69,12 +69,12 @@ ul{
 }
 
 .absolute-container{
-    min-width: 70%;
-    min-height: 500px;
-    max-height: auto;
     position: absolute;
     border: solid 2px black;
     left: 25%;
+    right: 1em;
+    bottom: 1em;
+    top: 1em;
     z-index: -1;
 }
 
@@ -82,33 +82,31 @@ ul{
 .img-container{
     flex: 1;
     max-width: 600px;
-    min-width: 500px;
+    
 }
 
 img{
-
+    height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
 .flex-items{
-    flex-wrap: wrap;
+
     display: flex;
-    margin-top: 3em;
     justify-content: space-evenly;
 }
 
 .txt-container{
     display: flex;
     flex: 1;
-    min-width: 500px;
+    flex-direction: column;
     max-width: 600px;
     justify-content: center;
-    align-items: center;  
+    align-items: flex-start;  
 }
 
 .text-content{
-    margin: 5em;
     font-family: 'Questrial', sans-serif;
 }
 
@@ -130,3 +128,57 @@ img{
 /* Wine tours & Tastings end */
 
 /* Shop feature */
+
+.shop-feature-section{
+    padding: 4em;
+    background-color: #2A292F;
+
+}
+
+.shop-feature-heading{
+    color: white ;
+}
+
+.flex-shop-feature{
+    display: flex;   
+    
+}
+
+.img-wrapper{
+    margin: 2em;
+    background-color: white;
+    display: flex;
+    flex: 1;
+    max-height: 400px;
+}
+.img-wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.img-wrapper:hover{
+    transform: scale(1.025);
+    transition: .8s;
+}
+
+.txt-container-feature{
+    display: none;
+    margin: 1em;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.secondary-font{
+    font-family: 'Questrial', sans-serif;
+}
+
+.img-wrapper:hover .txt-container-feature{
+    transition: 0.6s;
+    display: block;
+
+}
+
+
