@@ -1,16 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&family=Volkhov&display=swap');
 
+
+/* General Styling */
 body{
     margin: 0;
     font-family: 'Volkhov', serif;
 }
 
-/* navigation and landing */
-
 ul{
     padding: 0;
     margin: 0;
 }
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
+    color: black;
+}
+
+.secondary-font{
+    font-family: 'Questrial', sans-serif;
+}
+
+/* navigation and landing */
 
 #landing-section{
     background-image: url(./images/landing-image.jpeg);
@@ -41,17 +57,12 @@ ul{
     flex-direction: row;  
 }
 
-.nav-items li{
-    list-style: none;  
-} 
-
 .cart-img{
     height: 20px;
     width: 20px;
 }
 
 .nav-items a{
-    text-decoration: none;
     margin: .8em;
     color: black;
 }
@@ -77,12 +88,9 @@ ul{
     top: 1em;
     z-index: -1;
 }
-
-
 .img-container{
     flex: 1;
-    max-width: 600px;
-    
+    max-width: 600px;   
 }
 
 img{
@@ -106,24 +114,21 @@ img{
     align-items: flex-start;  
 }
 
-.text-content{
-    font-family: 'Questrial', sans-serif;
-}
-
-.wine-tours-button{
+.button{
     margin-top: 2em;
-    background-color: #FFD30A;
-    max-width: 100px;
+    background-color: black;
+    max-width: 150px;
     padding: .8em;
     text-align: center;
-    border: solid 2px black;
 }
 
-.wine-tours-button a{
+.button a{
     text-decoration: none;
-    color:black;
+    color:white;
     font-family: 'Volkhov', serif;
 }
+
+
 
 /* Wine tours & Tastings end */
 
@@ -132,24 +137,26 @@ img{
 .shop-feature-section{
     padding: 4em;
     background-color: #2A292F;
-
 }
 
-.shop-feature-heading{
-    color: white ;
+.white-heading{
+    color: white;
 }
 
 .flex-shop-feature{
-    display: flex;   
-    
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content:center;      
 }
 
 .img-wrapper{
-    margin: 2em;
+    margin: 1em;
     background-color: white;
     display: flex;
     flex: 1;
     max-height: 400px;
+    min-width: 445px;
+    max-width: 450px; 
 }
 .img-wrapper img{
     height: 100%;
@@ -159,25 +166,72 @@ img{
 
 .img-wrapper:hover{
     transform: scale(1.025);
-    transition: .8s;
+    transition: .6s;
 }
-
-.txt-container-feature{
-    display: none;
+.txt-container{
     margin: 1em;
-    /* display: flex; */
-    flex-direction: column;
-    align-items: flex-start;
+}
+
+/* shop feature end */
+
+/* Join the Club */
+
+.join-the-club-section{
+    display: flex;
     justify-content: center;
+    align-items: center;
+    background-image: url(./images/join-the-club-img.jpeg);
+    background-size: cover;
+    background-position: center;
+   min-height: 800px;
 }
 
-.secondary-font{
-    font-family: 'Questrial', sans-serif;
+.white-container{
+    padding: 4em;
+    background-color: rgba(255, 255, 255, 0.826);    
 }
 
-.img-wrapper:hover .txt-container-feature{
-    display: block;
+/* footer start */
 
+footer{
+    min-height: 200px;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
 }
+
+.flex-row{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    border: solid 1px black;
+}
+
+.flex-one{
+    padding: 1em;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.input-container{
+    display: flex;
+    padding: 1em;
+    color: black;
+    border-radius: 10px;
+}
+
+.submit-button{
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+    padding: .6em;
+}
+
+.footer-links{
+    display: flex;
+    align-items: center;
+}
+
 
 
