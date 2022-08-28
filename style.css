@@ -122,57 +122,76 @@ img{
     text-align: center;
 }
 
+button a:hover{
+    scale: 1.15;
+    transition: 0.4s;
+}
+
 .button a{
     text-decoration: none;
     color:white;
     font-family: 'Volkhov', serif;
 }
-
-
-
 /* Wine tours & Tastings end */
 
-/* Shop feature */
+/* shop slider */
 
-.shop-feature-section{
+ .shop-slider{
     padding: 4em;
-    background-color: #2A292F;
-}
+    height: 100%;
+ }
 
-.white-heading{
-    color: white;
-}
-
-.flex-shop-feature{
+ .slider-container{
     display: flex;
-    flex-wrap: wrap; 
-    justify-content:center;      
-}
+    justify-content: space-evenly;
+ }
 
-.img-wrapper{
-    margin: 1em;
-    background-color: white;
-    display: flex;
+ .slider{
     flex: 1;
-    max-height: 400px;
-    min-width: 445px;
-    max-width: 450px; 
-}
-.img-wrapper img{
+    max-width: 120px;
+ }
+ .img-wrapper img{
     height: 100%;
     width: 100%;
     object-fit: contain;
-}
+ }
 
-.img-wrapper:hover{
-    transform: scale(1.025);
-    transition: .6s;
-}
-.txt-container{
-    margin: 1em;
-}
+ .img-wrapper:hover{
+    scale: 1.15;
+    transition: 0.4s;
+ }
 
-/* shop feature end */
+ .txt-wrapper h1{
+    font-size: 1em;
+    text-align: center;
+ }
+
+ .txt-wrapper p{
+    font-size: .8em;
+    text-align: center;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* shop slider end */
 
 /* Join the Club */
 
