@@ -29,30 +29,34 @@ li{
 /* navigation and landing */
 
 #landing-section{
+    padding: 1em;
     background-image: url(./images/landing-image.jpeg);
     height: 90vh;
     background-size: cover;
     background-position: center;
 }
 .nav-bar{
-    padding: 1em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 .logo-wrapper{
     display: flex;
+    align-items: center;
     max-width: 100px;
     max-height: 100px;
+    min-height: 80px;
+    min-width: 80px
 }
 
 .logo-wrapper img{
+    height: 100%;
     width: 100%;
     object-fit: contain;  
 }
 
 .nav-items{
-    padding-top: 1em;
     display: flex;
     flex-direction: row;  
 }
@@ -63,7 +67,7 @@ li{
 }
 
 .nav-items a{
-    margin: .8em;
+    margin: 1.5em;
     color: black;
 }
 
@@ -115,23 +119,23 @@ img{
 }
 
 .button{
+    border: solid 2px black;
     margin-top: 2em;
     background-color: black;
     max-width: 150px;
     padding: .8em;
     text-align: center;
-}
-
-button a:hover{
-    scale: 1.15;
-    transition: 0.4s;
-}
-
-.button a{
     text-decoration: none;
     color:white;
     font-family: 'Volkhov', serif;
+    font-size: .8em;
 }
+
+.button:hover , .button a{
+    background-color: white;
+    color: black;
+}
+
 /* Wine tours & Tastings end */
 
 /* shop slider */
@@ -157,7 +161,7 @@ button a:hover{
  }
 
  .img-wrapper:hover{
-    scale: 1.15;
+    scale: 1.075;
     transition: 0.4s;
  }
 
@@ -210,6 +214,8 @@ button a:hover{
     background-color: rgba(255, 255, 255, 0.826);    
 }
 
+
+
 /* footer start */
 
 footer{
@@ -220,10 +226,12 @@ footer{
 }
 
 .flex-row{
+    padding: 1em;
     display: flex;
     flex: 1;
     flex-direction: row;
-    border: solid 1px black;
+    border: solid 2px black;
+    align-items: center;
 }
 
 .flex-one{
@@ -231,26 +239,51 @@ footer{
     display: flex;
     flex: 1;
     flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.flex-one li a:hover{
+    text-decoration: underline;
 }
 
 .input-container{
     display: flex;
-    padding: 1em;
     color: black;
-    border-radius: 10px;
+}
+
+.email-input{
+   flex: 1;
 }
 
 .submit-button{
+    flex: 1;
     background-color: black;
     color: white;
-    border: solid 1px white;
-    padding: .6em;
+    border: none;
+   align-items: center;
 }
 
 .footer-links{
+    flex: 1;
     display: flex;
-    align-items: center;
 }
 
+.social-icon{
+    max-width: 20px;
+    max-height: 20px;
+    
+}
 
+.social-icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.icon-flex-row{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
