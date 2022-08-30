@@ -26,6 +26,7 @@ li{
     font-family: 'Questrial', sans-serif;
 }
 
+
 /* navigation and landing */
 
 #landing-section{
@@ -42,18 +43,17 @@ li{
     align-items: center;
 }
 .logo-wrapper{
+    padding: .8em;
     display: flex;
-    align-items: center;
-    max-width: 100px;
-    max-height: 100px;
-    min-height: 80px;
-    min-width: 80px
+    justify-content: center;
 }
 
 .logo-wrapper img{
+    min-width: 90px;
+    max-width: 100px;
     height: 100%;
     width: 100%;
-    object-fit: contain;  
+    object-fit: cover;  
 }
 
 .nav-items{
@@ -75,7 +75,42 @@ li{
     text-decoration: underline;
 }
 
-/* navigation and landing end */
+#hamburger{
+    display: none;
+}
+
+.menu-icon{
+    height: 20px;
+    width: 20px;  
+}
+
+/* secondary nav */
+
+.menu_hidden{
+    display: none;
+}
+
+#secondary_nav{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.876);
+    justify-content: center;
+}
+
+.nav-items-col li{
+    text-align: center;
+    border-bottom: solid 1px rgb(118, 118, 118);
+    padding: 1em;
+}
+
+.nav-items-col a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
 
 /* wine tours & tastings section */
 .wine-tours-and-tastings{
@@ -110,6 +145,7 @@ img{
 }
 
 .txt-container{
+    padding: 1em;
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -142,7 +178,7 @@ img{
 
  .shop-slider{
     padding: 4em;
-    height: 100%;
+    min-height: 600px;
  }
 
  .slider-container{
@@ -174,27 +210,6 @@ img{
     font-size: .8em;
     text-align: center;
  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* shop slider end */
 
 /* Join the Club */
@@ -213,8 +228,6 @@ img{
     padding: 4em;
     background-color: rgba(255, 255, 255, 0.826);    
 }
-
-
 
 /* footer start */
 
@@ -260,18 +273,18 @@ footer{
     background-color: black;
     color: white;
     border: none;
-   align-items: center;
+    align-items: center;
 }
 
 .footer-links{
-    flex: 1;
     display: flex;
 }
 
 .social-icon{
     max-width: 20px;
     max-height: 20px;
-    
+    min-width: 20px;
+    min-height: 20px;  
 }
 
 .social-icon img{
@@ -285,5 +298,50 @@ footer{
     flex: 1;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+
+/* media query 830px Tablet */
+
+@media(max-width: 830px) {
+
+    footer{
+        flex-direction: column;
+    }
+
+    .flex-row{
+        flex-direction: column;
+    }
+
+  .social-icon{
+    margin: 5px;
+  }
+
+}
+
+/* media query Small tablet 765px */
+
+@media(max-width: 765px){
+
+    .nav-items{
+        display: none;
+    }
+
+    #hamburger{
+        display: block;
+    }
+
+
+    .absolute-container{
+        display: none;
+    }
+
+    .flex-items{
+        flex-direction: column;
+    }
+
+    .header{
+        text-align: center;   
+    }
 }
 
