@@ -86,14 +86,16 @@ li{
 
 /* secondary nav */
 
-.menu_hidden{
-    display: none;
-}
 
-#secondary_nav{
+
+#secondary_nav{ 
     display: flex;
     background-color: rgba(255, 255, 255, 0.876);
     justify-content: center;
+}
+
+.menu_hidden{
+    display: none !important; 
 }
 
 .nav-items-col li{
@@ -342,6 +344,12 @@ footer{
 
     .header{
         text-align: center;   
+    }
+
+    .slider-container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
 }
 

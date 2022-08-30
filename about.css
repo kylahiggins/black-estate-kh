@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Volkhov&display=swap');
+
+
+/* General Styling */
+body{
+    margin: 0;
+    font-family: 'Volkhov', serif;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
+    color: black;
+}
+
+.secondary-font{
+    font-family: 'Questrial', sans-serif;
+}
+
+.white-txt{
+    color: white;
+}
+
+p{
+    margin: 0;
+}
+
+
+/* navigation and landing */
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-wrapper{
+    padding: .8em;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-wrapper img{
+    min-width: 90px;
+    max-width: 100px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;  
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;  
+}
+
+.cart-img{
+    height: 20px;
+    width: 20px;
+}
+
+.nav-items a{
+    margin: 1.5em;
+    color: black;
+}
+
+.nav-items a:hover{
+    text-decoration: underline;
+}
+
+#hamburger{
+    display: none;
+}
+
+.menu-icon{
+    height: 20px;
+    width: 20px;  
+}
+
+/* secondary nav */
+
+
+
+#secondary_nav{ 
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.876);
+    justify-content: center;
+}
+
+.menu_hidden{
+    display: none !important; 
+}
+
+.nav-items-col li{
+    text-align: center;
+    border-bottom: solid 1px rgb(118, 118, 118);
+    padding: 1em;
+}
+
+.nav-items-col a:hover{
+    text-decoration: underline;
+}
+
+/* about section */
+
+.about-section{
+    padding: 4em;
+    position: relative;
+    background-color: #2A292F;
+    z-index: -2;
+}
+.img-container{
+    flex: 1;
+    max-width: 600px;   
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.flex-items{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.txt-container{
+    padding: 1em;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: 600px;
+    justify-content: center;
+    align-items: flex-start;  
+}
+
+.button{
+    border: solid 2px white;
+    margin-top: 2em;
+    background-color: white;
+    max-width: 150px;
+    padding: .8em;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    font-family: 'Volkhov', serif;
+    font-size: .8em;
+}
+
+.button:hover , .button a{
+    background-color: black;
+    color: white;
+}
+
+/* vineyard section */
+
+.vineyard-section{
+    padding: 4em;
+    position: relative;
+    background-color: #2A292F;
+    z-index: -2;
+}
+
+.reverse-absolute-container{
+    position: absolute;
+    background-color: white;
+    right: 25%;
+    left: 1em;
+    bottom: 1em;
+    top: 1em;
+    z-index: -1;
+}
+.white-absolute-container{
+    position: absolute;
+    background-color: white;
+    left: 25%;
+    right: 1em;
+    bottom: 1em;
+    top: 1em;
+    z-index: -1;
+}
+
+.reverse-img-container{
+    flex: 1;
+    max-width: 600px; 
+      
+}
+
+.reverse-txt-container{
+    padding: 1em;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: 600px;
+    justify-content: center;
+    align-items: flex-start;  
+}
+
+/* who we are section */
+
+.who-we-are-section{
+    padding: 4em;
+    position: relative;
+    background-color: #2A292F;
+    z-index: -2;
+}
+
+/* testimonials section */
+
+.testimonials-section{
+    padding: 4em;
+}
+
+.testimonial-container{
+    display: flex;
+    margin: 1em;
+}
+
+.flex-one{
+    flex: 1;
+}
+
+.profile-img-wrapper{
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.profile-img-wrapper img{
+    object-fit: contain; 
+}
+
