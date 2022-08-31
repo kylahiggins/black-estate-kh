@@ -220,21 +220,56 @@ img{
     padding: 4em;
 }
 
-.testimonial-container{
+.row{
     display: flex;
-    margin: 1em;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.flex-one{
-    flex: 1;
+.border{
+    border: solid 2px black;
 }
 
 .profile-img-wrapper{
-    max-width: 200px;
+    min-width: 300px;
     max-height: 200px;
 }
 
-.profile-img-wrapper img{
-    object-fit: contain; 
+.flex-container{
+    flex: 1;
+    margin: 1em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.flex-content{
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row-container{
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.flex-row{
+    flex: 1;
+    margin: 1em;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.fa{
+    color: rgb(255, 204, 0);
+    margin: .2em;
 }
 
