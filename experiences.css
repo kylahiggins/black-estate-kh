@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Volkhov&display=swap');
+
+
+/* General Styling */
+body{
+    margin: 0;
+    font-family: 'Volkhov', serif;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
+    color: black;
+}
+
+.secondary-font{
+    font-family: 'Questrial', sans-serif;
+}
+
+
+/* navigation and landing */
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-wrapper{
+    padding: .8em;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-wrapper img{
+    min-width: 90px;
+    max-width: 100px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;  
+}
+
+.nav-items{
+    display: flex;
+    flex-direction: row;  
+}
+
+.cart-img{
+    height: 20px;
+    width: 20px;
+}
+
+.nav-items a{
+    margin: 1.5em;
+    color: black;
+}
+
+.nav-items a:hover{
+    text-decoration: underline;
+}
+
+#hamburger{
+    display: none;
+}
+
+.menu-icon{
+    height: 20px;
+    width: 20px;  
+}
+
+/* secondary nav */
+
+
+
+#secondary_nav{ 
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.876);
+    justify-content: center;
+}
+
+.menu_hidden{
+    display: none !important; 
+}
+
+.nav-items-col li{
+    text-align: center;
+    border-bottom: solid 1px rgb(118, 118, 118);
+    padding: 1em;
+}
+
+.nav-items-col a:hover{
+    text-decoration: underline;
+}
+
+.experience-nav-section{
+    padding: 4em;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer section */
+
+footer{
+    display: none;
+    min-height: 200px;
+    padding: 1em;
+    /* display: flex; */
+    flex-direction: row;
+}
+
+.flex-footer-row{
+    padding: 1em;
+    display: flex;
+    flex: 1;
+    border: solid 1px black;
+    align-items: center;
+}
+
+.flex-one{
+    padding: 1em;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.flex-one li a:hover{
+    text-decoration: underline;
+}
+
+.input-container{
+    display: flex;
+    color: black;
+}
+
+.email-input{
+   flex: 1;
+}
+
+.submit-button{
+    flex: 1;
+    background-color: black;
+    color: white;
+    border: none;
+    align-items: center;
+}
+
+.footer-links{
+    display: flex;
+}
+
+.social-icon{
+    max-width: 20px;
+    max-height: 20px;
+    min-width: 20px;
+    min-height: 20px;  
+}
+
+.social-icon img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.icon-flex-row{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+} 
+
+
+/* media query 830px Tablet */
+
+@media(max-width: 830px) {
+
+    .flex-items{
+        flex-direction: column;
+    }
+    
+    .absolute-container{
+        display: none;
+    }
+    
+    .white-absolute-container{
+        display: none;
+    }
+    
+    .reverse-absolute-container{
+        display: none;
+    }
+    
+    .txt-container , .reverse-txt-container{
+        background-color: white;
+        }
+
+    .social-icon{
+    margin: 5px;
+  }
+
+    footer{
+    flex-direction: column;
+}
+
+    .flex-footer-row{
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* media query Small tablet 765px */
+
+@media(max-width: 768px){
+
+    .about-section , .vineyard-section , .who-we-are-section , .testimonials-section , footer{
+        padding: 2em;
+    }
+
+    .nav-items{
+        display: none;
+    }
+
+    #hamburger{
+        display: block;
+    }
+
+
+    .absolute-container{
+        display: none;
+    }
+
+    .white-absolute-container{
+        display: none;
+    }
+
+    .reverse-absolute-container{
+        display: none;
+    }
+
+    .txt-container , .reverse-txt-container{
+        background-color: white;
+        }
+
+.flex-container{
+    flex-direction: column;
+}
+
+
+footer{
+    flex-direction: column;
+}
+
+.flex-footer-row{
+    flex-direction: column;
+}
+}
+
+@media(max-width: 668px){
+
+.flex-items{
+    flex-direction: column;
+}
+
+}
+

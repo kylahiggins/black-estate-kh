@@ -32,11 +32,8 @@
         </ul>
     <div id="secondary_nav" class="menu_hidden">
             <ul>  
-                <div class="logo-wrapper">
-                <img src="./images/blacklogo.png" alt="Black Estate Logo">
-                </div>
                 <div class="nav-items-col">
-                <li><a href="#">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="">Experiences</a></li>
                 <li><a href="">Join the Club</a></li>
@@ -120,54 +117,109 @@
 </section> 
 
 <section class="testimonials-section">
-    <h1>Testimonials</h1>
 
-    <div class="row">
-    <div class="flex-container secondary-font border">
-        <div class="profile-img-wrapper flex-content">
-            <img src="./images/profile2.jpeg" alt="Profile Image">
-        </div>
-            <div class="flex-content">
-                <p>"We had a lovely stay at the Black Estate B & B. The setting is beautiful amongst the vines and the architecture of the building compliments the rural setting well - the architecture is understated but sleek."</p>     
-                    
-                <div class="row-container">
-                <div class="flex-row">
-                        <p">~ James ~</p>
-                    </div>
-                         <div class="flex-row">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </div>
-                    </div>
-                    
-            </div>
+    <div class="heading">
+        <h1>Testimonials</h1>
     </div>
 
-    <div class="flex-container secondary-font border">
-        <div class="profile-img-wrapper flex-content">
-            <img src="./images/profile1.jpeg" alt="Profile Image">
-        </div>
-            <div class="flex-content">
-                <p>"What a great location, with a wonderful view of the vineyard. The staff couldn't have been more friendly. The menu was original, the food beautifully plated and it tasted amazing. Black Estate is a must visit."</p>     
-                    
-                <div class="row-container">
-                <div class="flex-row">
-                        <p">~ Sophie ~</p>
-                    </div>
-                         <div class="flex-row">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                        </div>
-                    </div>      
+<div class="flex-container">
+        <div class="flex-child-col">
+            <div class="img-wrapper">
+                <img src="./images/profile1.jpeg" alt="">
             </div>
+            <div class="txt-content secondary-font">
+               <p>What a great location, with a wonderful view of the vineyard. The staff couldn't have been more friendly. 
+                The menu was original, the food beautifully plated and it tasted amazing. Black Estate is a must visit.</p>
+            </div>
+            <div class="rating-row">
+            <div class="flex-row secondary-font">
+                <p>~ Sophie ~</p>
+            </div>
+            <div class="flex-row">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-child-col">
+        <div class="img-wrapper">
+            <img src="./images/profile2.jpeg" alt="">
+        </div>
+        <div class="txt-content secondary-font">
+            <p>We had a lovely stay at the Black Estate B & B. The setting is beautiful amongst the vines and the architecture of the building compliments the rural setting well - the architecture is understated but sleek.</p> 
+        </div>
+        <div class="rating-row">
+        <div class="flex-row secondary-font">
+            <p>~ Connor ~</p>
+        </div>
+        <div class="flex-row">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+        </div>
     </div>
 </div>
-
-
+</div>
 </section>
+
+
+<!-- Footer section -->
+
+<footer>
+    <div class="flex-footer-row">
+        <div class="flex-one">
+            <div class="logo-wrapper">
+                <img src="./images/blacklogo.png" alt="Black Estate Logo">
+            </div> 
+        </div>
+        
+        <div class="flex-one">
+            <div class="input-container">
+                <label class="enter-email" for="email">Enter your email:</label>
+            </div>
+            <div class="icon-flex-row">
+                <input class="flex-one" type="email" id="email" name="email">
+                <input type="submit" class="submit-button flex-one">
+            </div>
+        </div>
+    </div> 
+
+
+        <div class="flex-footer-row">
+            <div class="flex-one">
+                <div class="footer-links">
+                    <ul class="flex-one">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Shop</a></li>
+                    </ul>
+                    <ul class="flex-one">
+                        <li><a href="">Experiences</a></li>
+                        <li><a href="">Resturant</a></li>
+                    </ul>
+                </div>
+            </div>
+              <div class="flex-one">
+                <div class="icon-flex-row">
+                   <div class="social-icon">
+                    <a href="https://www.facebook.com/blackestatewines"><img src="./icons/facebook-icon.png" alt="Facebook"></a>
+                   </div>
+                   <div class="social-icon">
+                    <a href="https://www.instagram.com/blackestate/?hl=en"><img src="./icons/instagram-icon.png" alt="Facebook"></a>
+                   </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+               
+</footer>
+
+
+<script src="./script.js"></script>
+</body>
+</html>
