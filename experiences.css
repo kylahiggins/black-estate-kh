@@ -26,6 +26,12 @@ li{
     font-family: 'Questrial', sans-serif;
 }
 
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 
 /* navigation and landing */
 
@@ -101,17 +107,206 @@ li{
     text-decoration: underline;
 }
 
+
+/* experience section */
+
 .experience-nav-section{
     padding: 4em;
+    background-color: #2A292F;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 2em;
+    color: white;
+}
+
+.flex-grid{
+    display: flex;
+    justify-content: center;
 }
 
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(200px,auto);
+    grid-gap: 1em;
+
+    grid-template-areas: 
+    "wine-tours wine-tastings accommodation"
+    "trails resturant truffles";
+}
+
+.grid-content{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.img-wrapper a:hover>img{
+    transform: scale(1.2);
+}
+
+.img-wrapper a img{
+    transition: 0.4s;
+}
+
+.wine-tours{
+    grid-area: wine-tours;
+}
+
+.wine-tastings{
+    grid-area: wine-tastings;
+}
+
+.accommodation{
+    grid-area: accommodation;
+}
+
+.trails{
+    grid-area: trails;
+}
+
+.resturant{
+    grid-area: resturant;
+}
+
+.truffles{
+    grid-area: truffles;
 }
 
 
+.img-wrapper{
+    background-color: white;
+    height: 100%;
+    overflow: hidden;
+}
 
+.txt-wrapper{
+   display: flex;
+   justify-content: center;
+   color: white; 
+}
+
+.txt-wrapper:hover{
+    text-decoration: underline;
+}
+
+/* wine tours section */
+
+#wine-tours{
+    padding: 4em;
+    position: relative;
+}
+
+.absolute-container{
+    position: absolute;
+    border: solid 2px black;
+    left: 25%;
+    right: 1em;
+    bottom: 1em;
+    top: 1em;
+    z-index: -1;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tour-img-wrapper{
+    flex: 1;
+    max-width: 600px;
+}
+
+
+.txt-container{
+    flex: 1;
+    padding: 1em;
+    max-width: 600px;
+}
+
+.pricing-container{
+    border: solid 2px black;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    border-bottom: solid 1px black;
+}
+
+.col{
+    text-align: left;
+    flex: 1;
+    margin: 1em; 
+}
+
+.button{
+    border: solid 2px black;
+    margin-top: 2em;
+    background-color: black;
+    max-width: 150px;
+    padding: .8em;
+    text-align: center;
+    text-decoration: none;
+    color:white;
+    font-family: 'Volkhov', serif;
+    font-size: .8em;
+}
+
+.button:hover , .button a{
+    background-color: white;
+    color: black;
+}
+
+
+/* accommodation */
+
+
+#accommodation{
+    padding: 4em;
+    position: relative;
+    z-index: -2;
+}
+
+.reverse-absolute-container{
+    position: absolute;
+    border: solid 2px black;
+    right: 25%;
+    left: 1em;
+    bottom: 1em;
+    top: 1em;
+    z-index: -1;
+}
+
+.flex-container-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+.tour-img-wrapper{
+    flex: 1;
+    max-width: 600px;
+}
+
+
+.txt-container{
+    flex: 1;
+    padding: 1em;
+    max-width: 600px;
+}
+
+.icon-wrapper{
+   height: 20px;
+   width: 20px;
+}
 
 
 
