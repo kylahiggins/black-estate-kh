@@ -303,8 +303,20 @@ img{
     max-width: 600px;
 }
 
+.icon-container{
+    margin: 2em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .icon-wrapper{
-   height: 20px;
    width: 20px;
 }
 

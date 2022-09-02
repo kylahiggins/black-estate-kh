@@ -144,24 +144,6 @@ img{
     align-items: flex-start;  
 }
 
-.button{
-    border: solid 2px white;
-    margin-top: 2em;
-    background-color: white;
-    max-width: 150px;
-    padding: .8em;
-    text-align: center;
-    text-decoration: none;
-    color:black;
-    font-family: 'Volkhov', serif;
-    font-size: .8em;
-}
-
-.button:hover , .button a{
-    background-color: black;
-    color: white;
-}
-
 /* vineyard section */
 
 .vineyard-section{
